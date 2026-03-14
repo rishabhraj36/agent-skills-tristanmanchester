@@ -1,0 +1,5 @@
+{
+  "key": "plan_tier",
+  "type": "string",
+  "fallback_value": "free"
+}

@@ -1,18 +1,24 @@
 {
-  "email": "ada@example.net",
-  "first_name": "Ada",
-  "last_name": "Lovelace",
+  "email": "alice@example.net",
+  "first_name": "Alice",
+  "last_name": "Nguyen",
   "unsubscribed": false,
   "properties": {
+    "company_size": 42,
     "plan_tier": "pro",
-    "account_age_days": 365
+    "signup_source": "pricing_page"
   },
   "segments": [
-    "seg_123456789"
+    "seg_product_updates",
+    "seg_paid_users"
   ],
   "topics": [
     {
-      "id": "top_123456789",
+      "id": "top_product_updates",
+      "subscription": "opt_in"
+    },
+    {
+      "id": "top_security",
       "subscription": "opt_in"
     }
   ]

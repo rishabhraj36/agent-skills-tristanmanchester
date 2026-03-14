@@ -1,9 +1,10 @@
 {
-  "endpoint": "https://api.example.com/resend/webhooks",
+  "endpoint": "https://api.example.com/webhooks/resend",
   "events": [
     "email.sent",
     "email.delivered",
     "email.bounced",
+    "email.complained",
     "email.received"
   ]
 }
