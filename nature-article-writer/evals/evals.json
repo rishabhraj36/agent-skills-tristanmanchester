@@ -1,0 +1,60 @@
+{
+  "skill_name": "nature-article-writer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Turn the following rough study notes into a Nature-style article outline and referenced summary paragraph. Do not invent missing data. Then list any unresolved factual gaps that must be confirmed before submission.",
+      "expected_output": "A figure-led outline, a restrained Nature-style opening paragraph, and a short list of unresolved facts or missing details.",
+      "assertions": [
+        "The output includes a clear central claim.",
+        "The opening paragraph is aimed at broad scientific readers rather than only niche specialists.",
+        "The model does not invent accession numbers, ethics approvals, or numerical results that were not supplied.",
+        "The output includes an explicit list of unresolved factual gaps."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Rewrite this generic, AI-sounding abstract for Nature Materials. Keep every factual claim, cut the hype, and make it sound like careful human scientific prose.",
+      "expected_output": "A rewritten abstract with more precise language, less hype, and no invented content.",
+      "assertions": [
+        "The rewrite preserves the original factual content.",
+        "The rewrite reduces hype words such as novel, groundbreaking, or unprecedented.",
+        "The rewrite avoids generic phrases such as 'opens new avenues' unless specifically justified.",
+        "The rewrite reads as natural scientific prose rather than generic AI prose."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Convert this Nature Communications-style abstract and intro into a main Nature presubmission enquiry package: a cover paragraph to the editor, a referenced summary paragraph in Nature format, and a short note on fit.",
+      "expected_output": "An editor-facing cover paragraph, a referenced summary paragraph in Nature style, and a brief fit rationale.",
+      "assertions": [
+        "The response distinguishes editor-facing framing from manuscript text.",
+        "The Nature summary paragraph is broad, concise, and references are indicated.",
+        "The fit rationale explains why the work matters to an interdisciplinary readership.",
+        "The output does not simply paste the abstract into the cover paragraph."
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Draft a point-by-point reply to these two reviewer comments. Keep the tone firm but courteous, specify manuscript changes, and concede points that are valid.",
+      "expected_output": "A structured rebuttal document with quoted comments, specific responses, and precise manuscript-change notes.",
+      "assertions": [
+        "Each reviewer comment receives a direct response.",
+        "The tone is courteous and non-defensive.",
+        "The response identifies exact manuscript changes or explains why a request was not adopted.",
+        "The rebuttal does not promise analyses that were not actually done."
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Run a Nature-style preflight on this draft and produce a concise report: title length, missing sections, hype words, AI-tell phrases, and any missing availability statements.",
+      "expected_output": "A concise preflight report that identifies structural and stylistic issues and suggests concrete fixes.",
+      "assertions": [
+        "The report identifies missing mandatory or expected sections.",
+        "The report flags hype words or generic AI-like phrases when present.",
+        "The report checks for data and code availability statements.",
+        "The report suggests concrete, actionable fixes rather than vague criticism."
+      ]
+    }
+  ]
+}
